@@ -59,6 +59,13 @@ html {
     color: white;
 }
 
+
+header {
+    background-color: white;
+    z-index: 999;
+}
+
+
 #footer {
     height: 768px;
     background-color: #471873;
