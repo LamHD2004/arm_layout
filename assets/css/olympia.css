@@ -85,8 +85,12 @@ a {
     display: none;
 }
 
-.header__nav-item:hover > .header__nav-sub {
+.header__nav-item:hover .header__nav-sub {
     display: block;
+}
+
+.header__nav-item:not(:first-child) .header__nav-sub {
+    left: 30px;
 }
 
 .header__nav-sub-link {
@@ -129,6 +133,10 @@ a {
 }
 
 .header__nav-mobile-contact {
+    display: none;
+}
+
+.header__nav-mobile-body-languages {
     display: none;
 }
 

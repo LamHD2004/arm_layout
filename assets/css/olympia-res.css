@@ -59,6 +59,7 @@
         bottom: 0;
         background-color: #471873;
         transition: all linear 0.3s;
+        z-index: 1;
     }
 
     .header__nav-mobile-main {
@@ -82,11 +83,13 @@
 
     .header__nav-mobile-control {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid #623a87;
     }
 
-    .header__nav-mobile-control-close {
+    .header__nav-mobile-control-close,
+    .header__nav-mobile-control-back {
         padding: 18px 22px;
         font-size: 20px;
     }
@@ -132,5 +135,74 @@
 
     .header__right-menu {
         display: flex;
+    }
+
+    .header__nav-item:hover .header__nav-link {
+        color: white;
+    }
+
+    .header__nav-mobile.active {
+        left: 0;
+    }
+
+    .header__nav-sub {
+        margin-top: 55px;
+        position: unset;
+        background-color: #471873;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header__nav-sub-link {
+        display: block;
+        font-size: 22px;
+        padding: 0 0 15px 45px;
+        color: white;
+        border-bottom: none !important;
+        font-family: 'EB Garamond', serif;
+        font-weight: 600;
+    }
+    
+    .header__nav-item:hover > a {
+        color: white;
+    }
+
+    .header__nav-sub-link:hover {
+        color: white;
+    }
+
+    .header__nav-mobile-control-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 0.83;
+        letter-spacing: 1.5px;
+        color: #9074ab;
+    }
+    
+    .header__nav-mobile-contact a {
+        color: #8a8a8a;
+        font-size: 24px;
+    }
+
+    .header__nav-mobile-body-languages {
+        margin-top: 70px;
+        margin-left: 30px;
+    }
+
+    .header__nav-mobile-body-languages a {
+        padding-left: 15px;
+        font-size: 17px;
+        line-height: 1.18;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        color: #a38bb9;
+    }
+
+    .header__nav-mobile-body-languages a.active {
+        color: #fff;
+    }
+
+    .header__nav-mobile-body-languages {
+        display: block;
     }
 }
